@@ -1,0 +1,25 @@
+<!-- 头部 start -->
+<view class="header">
+	<view class="left">
+		<image src="../../img/playAll.png"></image>
+		<text>播放全部</text>
+	</view>
+	<view class="right">
+		<view class="download">
+			<image src="../../img/download.png"></image>
+			<text>下载</text>
+		</view>
+		<view class="checkedlist">
+			<image src="../../img/list.png"></image>
+			<text>多选</text>
+		</view>
+	</view>
+</view>
+<!-- 头部 end -->
+<!-- 列表 start -->
+<songItem wx:for="{{songList}}" 
+wx:key="index" 
+songList="{{item.data}}" 
+musicCount="{{index + 1}}"
+songCount="{{songCount}}"></songItem>
+<!-- 列表 end-->

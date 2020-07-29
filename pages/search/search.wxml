@@ -1,0 +1,40 @@
+<view id="search">
+  <!--  搜索框 start -->
+  <view class="search-box">
+    <view class="search-container">
+      <view>
+        <image src="/img/search.png"></image>
+      </view>
+      <view>
+      <!-- bindconfirm 按下回车键执行的函数 -->
+        <input type="text" 
+        placeholder="请输入歌手或者歌名"
+        bindinput="onInputChange"
+        bindconfirm="onInputSuccess"
+        value="{{value}}"
+        ></input>
+      </view>
+      <view>
+        <image src="/img/close.png" hidden="{{!isShow}}" bindtap="onClear"></image>
+      </view>
+    </view>
+  </view>
+  <!--  搜索框 end -->
+  <!-- 热门搜索模块  start -->
+  <view class="hot-search" hidden="{{isShow}}">
+    <view class="hot-search-title">热门搜索</view>
+    <text wx:for="{{hotmusic}}" 
+    wx:key="item" 
+    class="musicitem"
+    bindtap="searchHot"
+    data-key="{{item.k}}">{{item.k}}</text>
+  </view>
+  <!-- 热门搜索模块 end  -->
+  <!-- 列表 start -->
+<songItem wx:for="{{songList}}" 
+wx:key="index" 
+songList="{{item}}" 
+musicCount="{{index + 1}}"
+songCount="{{songCount}}"></songItem>
+<!-- 列表 end-->
+</view>

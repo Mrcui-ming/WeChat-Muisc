@@ -1,0 +1,9 @@
+设置全局的一些而皮质
+"window": {
+    "backgroundTextStyle": "light",   下拉的亮度 light(亮)/dark(闪)
+    "navigationBarBackgroundColor": "#fff",   顶部背景颜色
+    "navigationBarTitleText": "蓝鸥",    顶部的显示内容
+    "navigationBarTextStyle": "black",      顶部显示的内容颜色  white(白色)/black(黑色)
+    "enablePullDownRefresh": true,    是否可以下拉刷新
+    "backgroundColor": "#7777"      下拉后的背景颜色
+  },

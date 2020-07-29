@@ -1,0 +1,78 @@
+#play{
+  height: 100vh;
+  width: 100vw;
+}
+@keyframes rotate{
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.filterBox{
+  position: fixed;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover!important;
+  filter: blur(100rpx);
+}
+.play-header{
+  width: 100%;
+  height: 260rpx;
+
+  text-align: center;
+  overflow: hidden;
+}
+.play-header-center{
+  width: 100%;
+  height: 150rpx;
+  margin-top: 55rpx;
+}
+.play-header-center view:nth-child(1){
+  font-size: 38rpx;
+  font-weight: 700;
+  height: 75rpx;
+  line-height: 75rpx;  
+  margin-bottom: 10rpx;
+}
+.play-header-center view:nth-child(2){
+  font-size:  30rpx;
+}
+.play-main{
+  width: 100%;
+  height: 650rpx;
+ 
+  text-align: center;
+}
+.play-main>image{
+  width: 500rpx;
+  height: 500rpx;
+  border-radius: 50%;
+  margin-bottom: 60rpx;
+  animation: rotate 20s linear infinite;
+}
+.play-main view image{
+  width: 60rpx;
+  height: 60rpx;
+}
+.musicprogress{
+  display: flex;
+  height: 60rpx;
+  line-height: 80rpx;
+  justify-content: space-between;
+  padding: 0 20rpx;
+}
+.musicprogress slider{
+  width: 500rpx;
+}
+.musiccontrols{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 60rpx;
+}
+.musiccontrols image{
+  width: 80rpx;
+  height: 80rpx;
+}

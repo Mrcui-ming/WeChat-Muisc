@@ -1,0 +1,35 @@
+<view id="play">
+<!-- 过滤层 -->
+<view class="filterBox" style="background: url('{{imgSrc}}') no-repeat"></view>
+<!-- header start -->
+<view class="play-header">
+    <view class="play-header-center">
+      <view>{{songList.songname}}</view>
+      <view>{{songList.singer[0].name}}</view>
+    </view>
+</view>
+<!-- header end -->
+<!-- main start-->
+<view class="play-main">
+    <image src="{{imgSrc}}" style="{{broadcastState ? 'animation-play-state: running' : 'animation-play-state: paused'}}"></image>
+    <view>
+      <image src="{{MusicState === 0 ? '/img/liebiao.png' : (MusicState === 1) ? '/img/danqu.png' : '/img/suiji.png'}}" bindtap="ToggleMusicState"></image>
+    </view>
+</view>
+<!-- main end -->
+<!-- musicprogress start-->
+<view class="musicprogress">
+  <text>{{nowtime}}</text>
+  <!--value：进度的比例  size：圆形的大小 slider发生改变后的事件-->
+  <slider block-size="20" value="{{sliderinfo}}" bindchange="sliderChanged"></slider>
+  <text>{{mastertime}}</text>
+</view>
+<!-- musicprogress start-->
+<!-- musiccontrols start -->
+<view class="musiccontrols">
+  <image src="/img/last.png" bindtap="onLast"></image>
+  <image src="{{broadcastState ? '/img/pause.png' : '/img/play.png'}}" bindtap="contorlMusic"></image>
+  <image src="/img/next.png" bindtap="onNext"></image>
+</view>
+<!-- musiccontrols end -->
+</view>

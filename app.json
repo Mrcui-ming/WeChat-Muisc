@@ -1,0 +1,32 @@
+{
+  "pages": [
+    "pages/search/search",
+    "pages/list/list",
+    "pages/play/play"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "QQ音乐播放器",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true,
+    "backgroundColor": "#7777"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "text": "列表"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索"
+      }
+    ],
+    "position": "top",
+    "selectedColor": "#FF6868",
+    "color": "#666"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap72.json"
+}

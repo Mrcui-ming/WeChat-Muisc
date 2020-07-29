@@ -1,0 +1,27 @@
+.header {
+  display: flex;
+  height: 90rpx;
+  line-height: 90rpx;
+  font-size: 30rpx;
+  background-color: #eee;
+}
+.header image {
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: middle;
+}
+.header .left {
+  flex: 1;
+}
+.left image {
+  margin: 0 20rpx;
+  transform: translateY(-1px);
+}
+.right text {
+  margin: 0 20rpx;
+}
+.header .right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+}

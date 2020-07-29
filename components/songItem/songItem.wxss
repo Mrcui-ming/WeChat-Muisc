@@ -1,0 +1,86 @@
+.musicitems {
+  display: flex;
+  word-wrap: break-word;
+  height: 130rpx;
+}
+.musicitems .ordernumber {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  width: 90rpx;
+}
+.musicitems .ordernumber view {
+  flex: 1;
+  line-height: 65rpx;
+  text-align: center;
+}
+.musicitems .ordernumber view:nth-child(1) {
+  font-size: 35rpx;
+  transform: translateY(10rpx);
+}
+.musicitems .ordernumber view:nth-child(2) {
+  color: #888;
+  font-size: 22rpx;
+}
+.music-items {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.music-item-musicname {
+  flex: 1;
+  height: 100%;
+}
+.music-item-musicname > view{
+  width: 100%;
+  height: 50%;
+  line-height: 65rpx;
+}
+.music-item-musicname-hd{
+  display: flex;
+  font-size: 35rpx;
+  transform: translateY(10rpx);
+}
+.music-item-musicname-hd text:nth-child(1){
+  max-width: 400rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.music-item-musicname-hd text:nth-child(2){
+  border: 2rpx solid pink;
+  margin: 0 10rpx;
+  color: pink;
+}
+.music-item-musicname-hd text:nth-child(3){
+  border: 2rpx solid rgb(221, 221, 50);
+  color:  rgb(221, 221, 50)
+}
+.music-item-musicname-hd text:nth-child(n+2){
+  width: 60rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  font-size: 22rpx;
+  border-radius: 10rpx;
+  margin-top: 14rpx;
+}
+.music-item-musicname view:nth-child(2){
+  color: #888;
+  font-size: 24rpx;
+}
+.music-info {
+  width: 90rpx;
+  height: 100%;
+  text-align: center;
+}
+.music-info image{
+  width: 50rpx;
+  height: 50rpx;
+  margin-top: 50%;
+  transform: translate(0 -50%);
+}
+.hover{
+  background-color: #7777;
+}

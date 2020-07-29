@@ -1,0 +1,22 @@
+<view class="musicitems" 
+hover-class="hover" 
+hover-stay-time="1000" 
+bindtap="songItemClick" 
+data-key='{"name": "zhangsan","age": 20}'
+>
+	<view class="ordernumber">
+		<view class="number">{{musicCount}}</view>
+		<view class="production">100%</view>
+	</view>
+	<view class="music-items">
+		<view class="music-item-musicname">
+			<view class="music-item-musicname-hd">
+        <text>{{songList.songname}}</text><text>独家</text><text>SQ</text>
+      </view>
+			<view>{{songList.singer[0].name}}</view>
+		</view>
+		<view class="music-info">
+			<image src="{{songCount === musicCount - 1 ? '/img/shengyin.png' : '/img/more.png'}}"></image>
+		</view>
+	</view>
+</view>
